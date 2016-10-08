@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "An intuitive query interface for AWQL (AdWords Query Language)",
   "main": "./lib/AWQLinator.js",
+  "typings": "./lib/src/AWQLinator.d.ts",
   "scripts": {
     "test": "mocha --recursive test/",
     "lint": "tslint '!(node_modules)/**/*.ts?(x)'"

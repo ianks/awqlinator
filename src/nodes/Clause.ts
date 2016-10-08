@@ -1,4 +1,4 @@
-interface IChildren {
+export interface IChildren {
   toString(): string;
 }
 
