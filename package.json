@@ -4,6 +4,10 @@
   "description": "An intuitive query interface for AWQL (AdWords Query Language)",
   "main": "./lib/AWQLinator.js",
   "typings": "./lib/src/AWQLinator.d.ts",
+  "files": [
+    "lib",
+    "readme.md"
+  ],
   "scripts": {
     "prepublish": "npm run clean && npm run test && npm run lint && tsc",
     "test": "mocha --recursive test/",

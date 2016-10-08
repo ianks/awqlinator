@@ -2,4 +2,3 @@ tsconfig.json
 tslint.json
 src
 test
-lib/test
