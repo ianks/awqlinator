@@ -1,3 +1,4 @@
+[![npm version](https://badge.fury.io/js/awqlinator.svg)](https://badge.fury.io/js/awqlinator)
 [![Build Status](https://travis-ci.org/ianks/awqlinator.svg?branch=master)](https://travis-ci.org/ianks/awqlinator)
 
 # AWQLinator
