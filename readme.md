@@ -8,8 +8,8 @@ string interpolation. It offers a simple interface for querying Google AdWords.
 ## How does it look?
 
 ```js
-
 import { AWQLinator } from ''
+
 const awql = new AWQLinator("ACCOUNT_PERFORMANCE_REPORT");
 
 const report = awql
