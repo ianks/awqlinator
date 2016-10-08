@@ -3,7 +3,7 @@
     "module": "commonjs",
     "target": "es3",
     "declaration": true,
-    "outDir": "lib",
+    "outDir": "dist",
     "noImplicitAny": true,
     "forceConsistentCasingInFileNames": true,
     "experimentalDecorators": true,

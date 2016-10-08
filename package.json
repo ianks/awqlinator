@@ -2,17 +2,17 @@
   "name": "awqlinator",
   "version": "1.0.1",
   "description": "An intuitive query interface for AWQL (AdWords Query Language)",
-  "main": "./lib/AWQLinator.js",
-  "typings": "./lib/src/AWQLinator.d.ts",
+  "main": "./dist/src/AWQLinator.js",
+  "typings": "./dist/src/AWQLinator.d.ts",
   "files": [
-    "lib",
+    "dist/src/*",
     "readme.md"
   ],
   "scripts": {
     "prepublish": "npm run clean && npm run test && npm run lint && tsc",
     "test": "mocha --recursive test/",
-    "lint": "tslint '!(node_modules|lib)/**/*.ts?(x)'",
-    "clean": "rm -rf ./lib ./awqlinator-*.tgz"
+    "lint": "tslint '!(node_modules|dist)/**/*.ts?(x)'",
+    "clean": "rm -rf ./dist ./awqlinator-*.tgz"
   },
   "repository": {
     "type": "git",
