@@ -1,6 +1,6 @@
 {
   "name": "awqlinator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An intuitive query interface for AWQL (AdWords Query Language)",
   "main": "./dist/src/AWQLinator.js",
   "typings": "./dist/src/AWQLinator.d.ts",
