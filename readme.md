@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ianks/awqlinator.svg?branch=master)](https://travis-ci.org/ianks/awqlinator)
+
 # AWQLinator
 
 A package for Javascript which makes dealing with AWQL more friendly than
