@@ -5,8 +5,10 @@
   "main": "./lib/AWQLinator.js",
   "typings": "./lib/src/AWQLinator.d.ts",
   "scripts": {
+    "prepublish": "npm run clean && npm run test && npm run lint && tsc",
     "test": "mocha --recursive test/",
-    "lint": "tslint '!(node_modules)/**/*.ts?(x)'"
+    "lint": "tslint '!(node_modules|lib)/**/*.ts?(x)'",
+    "clean": "rm -rf ./lib ./awqlinator-*.tgz"
   },
   "repository": {
     "type": "git",
