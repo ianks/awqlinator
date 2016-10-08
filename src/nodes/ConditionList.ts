@@ -1,9 +1,9 @@
 import { Condition } from "./Condition";
 
 export class ConditionList {
-  constructor(public children: Condition[]) {}
+  constructor(private children: Condition[]) {}
 
-  toString() {
+  public toString() {
     return this.children.map(child => child.toString()).join(" AND ");
   }
 }

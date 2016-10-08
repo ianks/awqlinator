@@ -1,13 +1,9 @@
-import { ColumnList } from './Types';
+import { ColumnList } from "./Types";
 
 export class Selection {
-  children: ColumnList;
+  constructor(private children: ColumnList) {}
 
-  constructor(children: ColumnList) {
-    this.children = children;
-  }
-
-  toString() {
+  public toString() {
     return this.children.join(",");
   }
 }

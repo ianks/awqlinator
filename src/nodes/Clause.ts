@@ -1,13 +1,13 @@
-interface Children {
+interface IChildren {
   toString(): string;
 }
 
 export abstract class Clause {
-  ClauseString: string;
+  public ClauseString: string;
 
-  constructor(public children: Children[]) {}
+  constructor(public children: IChildren[]) {}
 
-  toString() {
+  public toString() {
     return this.ClauseString + " " + this.children.map(child => child.toString()).join(" ");
   }
 }

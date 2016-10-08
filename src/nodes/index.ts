@@ -1,6 +1,6 @@
 export { Clause } from "./Clause";
-export { ConditionList } from "./ConditionList";
 export { Condition } from "./Condition";
+export { ConditionList } from "./ConditionList";
 export { DuringClause } from "./DuringClause";
 export { FromClause } from "./FromClause";
 export { LimitClause } from "./LimitClause";
@@ -9,5 +9,4 @@ export { Ordering } from "./Ordering";
 export { SelectClause } from "./SelectClause";
 export { Selection } from "./Selection";
 export { Statement } from "./Statement";
-export { Visitor } from "./Visitor";
 export { WhereClause } from "./WhereClause";

@@ -2,14 +2,13 @@ import { Clause } from "./Clause";
 import { DateRange } from "./Types";
 
 export class DuringClause extends Clause {
-  ClauseString = "DURING";
+  public ClauseString = "DURING";
 
   constructor(public children: [DateRange]) {
     super(children);
   }
 
-  toString() {
+  public toString() {
     return this.ClauseString + " " + this.children.join(",");
   }
 }
-

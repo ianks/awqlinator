@@ -1,9 +1,9 @@
-import { Clause } from './Clause';
+import { Clause } from "./Clause";
 
 export class Statement {
-  children: Clause[];
+  constructor(private children: [Clause]) {}
 
-  constructor(...children: Clause[]) {
-    this.children = children;
+  public toString() {
+    return this.children.map(child => child.toString()).join(" ");
   }
 }
