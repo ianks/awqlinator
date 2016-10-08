@@ -4,7 +4,8 @@
   "description": "An intuitive query interface for AWQL (AdWords Query Language)",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive test/"
+    "test": "mocha --recursive test/",
+    "lint": "tslint '!(node_modules)/**/*.ts?(x)'"
   },
   "repository": {
     "type": "git",

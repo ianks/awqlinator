@@ -3,9 +3,9 @@ import { expect } from "chai";
 import { oneLine } from "common-tags";
 
 describe("nodes", () => {
-  describe("Visitor", () => {
-    it("correctly renders an AWQLizer statement", () => {
-      const statement = new Nodes.Statement(
+  describe("Statement", () => {
+    it("correctly renders a collection of Clauses", () => {
+      const statement = new Nodes.Statement([
         new Nodes.SelectClause([
           new Nodes.Selection(["Clicks", "Impressions"]),
         ]),
@@ -17,9 +17,8 @@ describe("nodes", () => {
         new Nodes.OrderByClause([
           new Nodes.Ordering(["Clicks", "ASC"]),
         ]),
-      );
-      const visitor = new Nodes.Visitor(statement);
-      const result = visitor.toString();
+      ]);
+      const result = statement.toString();
 
       expect(result).to.eql(oneLine`
         SELECT Clicks,Impressions
