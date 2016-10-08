@@ -1,15 +1,15 @@
 {
-  "name": "awqlizer",
+  "name": "awqlinator",
   "version": "1.0.0",
   "description": "An intuitive query interface for AWQL (AdWords Query Language)",
-  "main": "index.js",
+  "main": "./lib/AWQLinator.js",
   "scripts": {
     "test": "mocha --recursive test/",
     "lint": "tslint '!(node_modules)/**/*.ts?(x)'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ianks/awqlizer.git"
+    "url": "git+https://github.com/ianks/awqlinator.git"
   },
   "keywords": [
     "awql",
@@ -18,9 +18,9 @@
   "author": "Ian Ker-Seymer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ianks/awqlizer/issues"
+    "url": "https://github.com/ianks/awqlinator/issues"
   },
-  "homepage": "https://github.com/ianks/awqlizer#readme",
+  "homepage": "https://github.com/ianks/awqlinator#readme",
   "devDependencies": {
     "@types/chai": "^3.4.34",
     "@types/common-tags": "^1.2.5",
