@@ -9,7 +9,7 @@ string interpolation. It offers a simple interface for querying Google AdWords.
 ## How does it look?
 
 ```js
-import { AWQLinator } from ''
+import { AWQLinator } from "awqlinator";
 
 const awql = new AWQLinator("ACCOUNT_PERFORMANCE_REPORT");
 
@@ -21,6 +21,14 @@ const report = awql
 
 // => SELECT Clicks,Impressions FROM ACCOUNT_PERFORMANCE_REPORT WHERE Clicks > 20
 ```
+
+
+## Features
+
+1. Strongly typed with Typescript.
+2. Compose queries easily
+3. Simple and intuitive query API
+
 
 ## What it does not offer
 
