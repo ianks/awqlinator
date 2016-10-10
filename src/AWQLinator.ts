@@ -5,12 +5,16 @@ export class AWQLinator {
   private statement: Nodes.Statement;
 
   constructor(sourceName?: Types.SourceName, statement?: Nodes.Statement) {
-    if (statement) {
+    if (statement != null) {
       this.statement = statement;
     } else {
-      const fromClause = new Nodes.FromClause([sourceName]);
-      const newStatement = new Nodes.Statement([fromClause]);
-      this.statement = newStatement;
+      if (sourceName != null)  {
+        const fromClause = new Nodes.FromClause([sourceName]);
+        const newStatement = new Nodes.Statement([fromClause]);
+        this.statement = newStatement;
+      } else {
+        throw new Error("Cannot iniitialize AWQLinator without sourceName or statement");
+      }
     }
   }
 
@@ -54,6 +58,6 @@ export class AWQLinator {
   private newWithAppendedClause(clause: Nodes.Clause) {
     const statement = this.statement.cloneWithNewClauseAppended(clause);
 
-    return new AWQLinator(null, statement);
+    return new AWQLinator(undefined, statement);
   }
 }

@@ -9,6 +9,7 @@
     "experimentalDecorators": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
+    "strictNullChecks": true,
     "pretty": true
   },
   "exclude": [
