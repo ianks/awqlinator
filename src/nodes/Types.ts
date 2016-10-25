@@ -11,6 +11,7 @@ export type DateRangeLiteral =
 export type DateString = string;
 export type Literal = string;
 export type Operator =
+  "=" |
   "!=" |
   ">" |
   ">=" |
