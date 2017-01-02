@@ -13,7 +13,8 @@ export class AWQLinator {
         const newStatement = new Nodes.Statement([fromClause]);
         this.statement = newStatement;
       } else {
-        throw new Error("Cannot iniitialize AWQLinator without sourceName or statement");
+        const newStatement = new Nodes.Statement([]);
+        this.statement = newStatement;
       }
     }
   }

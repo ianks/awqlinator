@@ -34,4 +34,17 @@ describe("AWQLinator", () => {
       "SELECT Clicks,Impressions FROM ACCOUNT_PERFORMANCE_REPORT WHERE Clicks > 20 DURING TODAY"
     );
   });
+
+  it("supports not having a from clause", () => {
+    const awqlinator = new AWQLinator();
+    const report = awqlinator
+      .select("Clicks", "Impressions")
+      .where("Clicks", ">", "20")
+      .during("TODAY");
+    const result = report.toAwql();
+
+    expect(result).to.eql(
+      "SELECT Clicks,Impressions WHERE Clicks > 20 DURING TODAY"
+    );
+  });
 });
